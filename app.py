@@ -7,7 +7,7 @@ import plotly.express as px
 # -------------------------------
 # Load CSV
 # -------------------------------
-csv_path = r"C:\Users\Brandon\tripleten_project_four\TripleTen-Project-4\vehicles_us.csv"
+csv_path = os.path.join(os.path.dirname(__file__), "vehicles_us.csv")
 vehicles = pd.read_csv(csv_path)
 
 # -------------------------------
